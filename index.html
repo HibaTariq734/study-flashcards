@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pink Study Flashcards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+
+        <header>
+            <h1>📘 Pink Study Flashcards</h1>
+            <p>Click card to flip, swipe next/prev, add your own questions!</p>
+        </header>
+
+        <!-- FLASHCARD -->
+        <div class="flashcard" onclick="flipCard()">
+            <div class="card-inner" id="cardInner">
+                <div class="card-front" id="questionBox">Question appears here</div>
+                <div class="card-back" id="answerBox">Answer appears here</div>
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="buttons">
+            <button class="btn" onclick="prevCard()">⟵ Previous</button>
+            <button class="btn" onclick="nextCard()">Next ⟶</button>
+        </div>
+
+        <!-- ADD NEW FLASHCARD -->
+        <div class="add-card">
+            <h3>Add New Flashcard</h3>
+            <input type="text" id="newQuestion" placeholder="Enter question">
+            <textarea id="newAnswer" placeholder="Enter answer"></textarea>
+            <button class="btn add-btn" onclick="addCard()">Add Card</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
